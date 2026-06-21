@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Joiner</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Server Joiner</h1>
+            <p>Enter the destination Server ID to begin processing.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="guildId" placeholder="Discord Server ID (e.g., 1510601534856101908)" autocomplete="off">
+            <button id="startBtn" onclick="startProcessing()">Start</button>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="terminal" id="logBox">
+            <div class="log-line info">Waiting for input...</div>
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
